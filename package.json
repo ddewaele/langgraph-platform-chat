@@ -1,0 +1,19 @@
+{
+  "name": "langgraph-platform-chat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @langchain/langgraph-cli dev --port 2024 --config ./langgraph.json",
+    "build": "npx @langchain/langgraph-cli build -t langgraph",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@langchain/core": "^1.1.0",
+    "@langchain/openai": "^1.1.3",
+    "langchain": "^1.1.1"
+  }
+}
