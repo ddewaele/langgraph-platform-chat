@@ -2,7 +2,7 @@
   "node_version": "20",
   "dependencies": ["."],
   "graphs": {
-    "chatAgent": "./src/agent/agent.ts:chatAgent"
+    "agent": "./src/agent/agent.ts:agent"
   },
   "env": ".env"
 }

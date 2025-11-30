@@ -1,8 +1,8 @@
 import {createAgent} from "langchain";
 import {ChatOpenAI} from "@langchain/openai";
-import { z } from 'zod';
+import {z} from 'zod';
 
-const model = new ChatOpenAI();
+const model = new ChatOpenAI({model: "gpt-4o-mini", useResponsesApi: true});
 
 const contextSchema = z.object({
     systemPromptRef: z.string().optional(),
@@ -10,8 +10,8 @@ const contextSchema = z.object({
 
 const simpleAgent = createAgent({
         model,
-    contextSchema
+        contextSchema
     }
 );
 
-export const chatAgent = simpleAgent.graph;
+export const agent = simpleAgent.graph;
